@@ -6,11 +6,11 @@ router.get('/', (req, res) =>{
 })
 
 router.get('/api', (req, res) =>{
-    res.send("<h3>Welcome to Open API - A Open Source, free, and public API for learning..</h3>")
+    res.send("<p>Welcome to Open API - A Open Source, free, and public API for learning..</p>")
 })
 
 router.get('/api/health', (req, res) =>{
-    res.json({message: "Evething is working fine!"})
+    res.json({tip: "Eat plenty of fresh, non-processed foods, drink 64 ounces of water every day, and limit caffeine and alcohol intake."})
 })
 
 module.exports = router;
