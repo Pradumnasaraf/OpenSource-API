@@ -1,8 +1,8 @@
 const express = require("express");
-const path = require('path')
 const app = express();
 
+app.use(require('./Middleware/logger.js'))
 app.use('/', require('./Router/router.js'))
 
-PORT = process.PORT || 3000
-app.listen(PORT, () => console.log(`Server is running on the PORT: ${PORT}`))
+PORT = process.PORT || 3002
+app.listen(PORT, () => console.log(`Server is live on the PORT: http://localhost:${PORT}`))
