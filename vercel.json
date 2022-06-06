@@ -1,0 +1,15 @@
+{
+    "name": "Open-API",
+    "version": 2,
+    "builds": [
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {"src": "/", "dest": "/"},
+        { "src": "/api", "dest": "/" },
+        { "src": "/api/health", "dest": "/" }
+    ]
+}
