@@ -4,10 +4,10 @@
 </div>
 
 ### Tech Stacks:
-- JavaScript
-- Node
-- Express
-- Vercel (For deployment)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [Vercel](https://vercel.com/) (For deployment)
 
 ### Endpoints
 
