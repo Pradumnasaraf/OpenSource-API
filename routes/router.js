@@ -3,10 +3,6 @@ const router = express.Router()
 const Health = require("../models/schema.js")
 const notFoundMsg = { message: "Not found, try something new" }
 
-router.get('/', (req, res) => {
-    res.send("Server is Live!")
-})
-
 router.get('/api', (req, res) => {
     res.send("Welcome to Open API - An Open Source, free, and public API for learning..")
 })
