@@ -11,6 +11,7 @@
         {"src": "/(.*)", "status": 404 ,"dest": "/" },
         {"src": "/", "dest": "/"},
         {"src": "/api", "dest": "/" },
-        {"src": "/api/health", "dest": "/" }
+        {"src": "/api/health", "dest": "/" },
+        { "src": "/api/health(?<id>[^/]*)", "dest": "/" }
     ]
 }
