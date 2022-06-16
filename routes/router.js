@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/api', (req, res) => {
-    res.send("Welcome to Open API - An Open Source, free, and public API for learning..")
+    res.send("Welcome to Open API - An Open Source, free, and public API for lnearning..")
 })
 
 router.get('/api/health', async (req, res) => {
