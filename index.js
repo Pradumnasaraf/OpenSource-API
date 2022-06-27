@@ -20,5 +20,5 @@ mongoose.connect(process.env.MONGODB_URL,{
     console.log(err);
   });
 
-PORT = process.PORT || 9004
+PORT = process.PORT || 9000
 app.listen(PORT, () => console.log(`Server is live on: http://localhost:${PORT}`))
