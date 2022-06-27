@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/Pradumnasaraf/open-API/compare/v1.1.0...v1.2.0) (2022-06-27)
+
+
+### Features
+
+* seprate the styling and fix vercel.json ([3a091b8](https://github.com/Pradumnasaraf/open-API/commit/3a091b86c2c1073c4345c087ded0a8d79240eca0))
+
+
+
 # [1.1.0](https://github.com/Pradumnasaraf/open-API/compare/v1.0.0...v1.1.0) (2022-06-25)
 
 
