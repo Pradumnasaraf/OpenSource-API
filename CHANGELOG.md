@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/Pradumnasaraf/open-API/compare/v1.2.0...v1.3.0) (2022-06-27)
+
+
+### Features
+
+* auto version support for `package-lock.json` ([09f3baf](https://github.com/Pradumnasaraf/open-API/commit/09f3baffa091a23a63f270c29b6df56a774e05cc))
+
+
+
 # [1.2.0](https://github.com/Pradumnasaraf/open-API/compare/v1.1.0...v1.2.0) (2022-06-27)
 
 
