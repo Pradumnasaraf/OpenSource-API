@@ -1,26 +1,26 @@
 body {
-    height: 100vh;
-    width: 100wh;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: antiquewhite;
-    color: rgb(255, 160, 43);
+  height: 100vh;
+  width: 100wh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  color: rgb(255, 160, 43);
 }
 
 #main {
-    text-align: center;
-    font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 
 #developer {
-    color: rgb(43, 43, 43);
-    font-size: 0.6em;
-    text-align: right;
+  color: rgb(43, 43, 43);
+  font-size: 0.6em;
+  text-align: right;
 }
 
 #developer a {
-    text-decoration: none;
-    color: rgb(250, 82, 82);
+  text-decoration: none;
+  color: rgb(250, 82, 82);
 }

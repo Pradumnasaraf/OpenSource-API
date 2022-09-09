@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const Health = require("../models/schema.js");
 const getHealth = require("../controller/health/getHealth.js");
 const postHealth = require("../controller/health/postHealth.js");
 const updateHealth = require("../controller/health/updateHealth.js");

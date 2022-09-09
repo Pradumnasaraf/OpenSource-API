@@ -5,5 +5,5 @@ const getHealth = async (req, res) => {
   } catch {
     console.log({ message: "Not found, try something new" });
   }
-}
+};
 module.exports = getHealth;

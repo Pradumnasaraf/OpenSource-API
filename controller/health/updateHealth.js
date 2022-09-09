@@ -8,5 +8,5 @@ const updateHealth = async (req, res) => {
   } catch {
     res.json({ message: "Not found, try something new" });
   }
-}
+};
 module.exports = updateHealth;
