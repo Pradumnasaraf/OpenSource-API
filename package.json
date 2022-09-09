@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "format": "prettier --write .",
+    "lint": "npx eslint --fix ."
   },
   "author": "Pradumna Saraf",
   "license": "MIT",
@@ -16,6 +18,8 @@
     "mongoose": "^6.3.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "eslint": "^8.23.0",
+    "nodemon": "^2.0.16",
+    "prettier": "2.7.1"
   }
 }

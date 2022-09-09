@@ -1,7 +1,7 @@
 name: ❗ Other
 description: Use this for any other issues. Please do NOT create blank issues
-title: '[OTHER] <description>'
-labels: ['other']
+title: "[OTHER] <description>"
+labels: ["other"]
 body:
   - type: textarea
     id: issuedescription
