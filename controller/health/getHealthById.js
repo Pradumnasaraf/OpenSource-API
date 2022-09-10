@@ -11,6 +11,7 @@ const getHealthById = async (req, res) => {
   } catch (e) {
     res.status(400).json({
       status: "fail",
-    });  }
+    });
+  }
 };
 module.exports = getHealthById;
