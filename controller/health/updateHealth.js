@@ -1,12 +1,21 @@
 const Health = require("../../models/schema.js");
 const updateHealth = async (req, res) => {
   try {
-    const healthMessage = await Health.findById(req.params.id);
-    healthMessage.message = req.body.message;
-    await healthMessage.save();
-    res.json(healthMessage);
-  } catch {
-    res.json({ message: "Not found, try something new" });
+    const health = await Health.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+
+    res.status(200).json({
+      status: "success",
+      data: {
+        health,
+      },
+    });
+  } catch (e) {
+    res.status(400).json({
+      status: "fail",
+    });
   }
 };
 module.exports = updateHealth;

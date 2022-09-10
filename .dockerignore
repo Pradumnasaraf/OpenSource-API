@@ -1,0 +1,13 @@
+.git
+.env
+LICENSE
+.gitignore
+Dockerfile
+node_modules
+docker-compose.*
+CHANGELOG.md
+vercel.json
+CODE_OF_CONDUCT.md
+README.md
+.gitpod.yml
+.githubat
