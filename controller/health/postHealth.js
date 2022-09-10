@@ -1,13 +1,18 @@
 const Health = require("../../models/schema.js");
 const postHealth = async (req, res) => {
-  const newHealth = new Health({
-    message: req.body.message,
-  });
   try {
-    await newHealth.save();
-    res.json(newHealth);
-  } catch {
-    res.json({ message: "Not found, try something new" });
+    const health = await Health.create(req.body);
+    res.status(200).json({
+      status: "success",
+      data: {
+        health,
+      },
+    });
+  } catch (e) {
+    console.log(e);
+    res.status(400).json({
+      status: "fail",
+    });
   }
 };
 module.exports = postHealth;

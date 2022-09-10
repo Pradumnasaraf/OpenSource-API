@@ -1,0 +1,20 @@
+version: "3"
+services:
+  node-app:
+    container_name: node-app
+    build: .
+    ports:
+      - 3001:3001
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo:4.0
+    volumes:
+      - mongo-db:/data/db
+
+volumes:
+  mongo-db:
