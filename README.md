@@ -14,4 +14,4 @@ Base URL - `opensourceapi.vercel.app`
 
 - `{baseurl}/api` - API Homepage message.
   Eg: `opensourceapi.vercel.app/api`
-- `{baseurl}/api/heatlh` - Returns a health tip.
+- `{baseurl}/api/health` - Returns a health tip.
