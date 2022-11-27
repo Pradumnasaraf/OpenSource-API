@@ -7,7 +7,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "format": "prettier --write .",
-    "lint": "npx eslint --fix ."
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
   },
   "author": "Pradumna Saraf",
   "license": "MIT",
@@ -19,7 +21,13 @@
   },
   "devDependencies": {
     "eslint": "^8.23.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "nodemon": "^2.0.16",
     "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "*.{js,md}": "prettier --write",
+    "*.js": "eslint --fix"
   }
 }
