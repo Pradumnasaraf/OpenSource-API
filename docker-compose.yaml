@@ -4,17 +4,25 @@ services:
     container_name: node-app
     build: .
     ports:
-      - 3001:3001
+      - 9009:9009
     env_file:
       - .env
     depends_on:
       - mongo
+    networks:
+      - os-api-network
 
   mongo:
     container_name: mongo
-    image: mongo:4.0
+    image: mongo:5.0
     volumes:
       - mongo-db:/data/db
+    networks:
+      - os-api-network
 
 volumes:
   mongo-db:
+networks:
+  os-api-network:
+    name: os-api-network
+    driver: bridge

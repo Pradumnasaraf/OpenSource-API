@@ -28,7 +28,7 @@ mongoose
   });
 
 // eslint-disable-next-line no-undef
-const PORT = process.env.PORT || 9002;
+const PORT = process.env.PORT || 9009;
 app.listen(PORT, () =>
   console.log(`Server is LIVE on -> http://localhost:${PORT}`)
 );
