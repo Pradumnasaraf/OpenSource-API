@@ -2,7 +2,6 @@
 <h2>OpenSource API</h2>
 <h3>An Open Source, free, and public API for learning purposes.<h3>
 </div>
- 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Pradumnasaraf/OpenSource-API)
 
@@ -21,6 +20,6 @@ Endpoints: **api/health**
 
 ```json
 {
-    "message":"Drink lots of water"
+  "message": "Drink lots of water"
 }
 ```
