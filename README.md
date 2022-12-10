@@ -2,7 +2,8 @@
 <h2>OpenSource API</h2>
 <h3>An Open Source, free, and public API for learning purposes.<h3>
 </div>
-  
+ 
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Pradumnasaraf/OpenSource-API)
 
 ## Tech
@@ -13,4 +14,13 @@
 
 Base URL - `opensourceapi.vercel.app`
 
-- `{baseurl}/api/health` - Returns a health tip.
+Endpoints: **api/health**
+
+- **GET:** - To get all the health data.
+- **POST** - Post a health data. With body
+
+```json
+{
+    "message":"Drink lots of water"
+}
+```
