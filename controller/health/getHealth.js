@@ -11,7 +11,7 @@ const getHealth = async (req, res) => {
     });
   } catch (e) {
     res.status(400).json({
-      status: "fail",
+      status: "Health advice not found",
     });
   }
 };
