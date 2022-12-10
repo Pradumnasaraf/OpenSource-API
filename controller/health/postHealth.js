@@ -3,7 +3,7 @@ const postHealth = async (req, res) => {
   try {
     const health = await Health.create(req.body);
     res.status(200).json({
-      status: "success",
+      status: "Your data has been saved!",
       data: {
         health,
       },
