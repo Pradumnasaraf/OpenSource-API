@@ -14,6 +14,7 @@ app.use(logger);
 app.use("/api/health", router);
 app.use(ErrorHandle);
 
+mongoose.set("strictQuery", false);
 mongoose
   // eslint-disable-next-line no-undef
   .connect(process.env.MONGODB_URL, {

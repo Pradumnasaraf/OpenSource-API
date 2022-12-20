@@ -6,6 +6,8 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
+      args:
+        NODE_ENV: development
     image: opensource-api
     command: npm run dev
     ports:
