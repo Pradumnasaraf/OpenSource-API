@@ -1,3 +1,4 @@
+name: Greeting message
 on:
   fork:
   push:
