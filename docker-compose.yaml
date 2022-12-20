@@ -1,19 +1,25 @@
-version: "3"
+version: "3.9"
+
 services:
   node-app:
     container_name: node-app
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: opensource-api
+    command: npm run dev
     ports:
       - 9009:9009
-    env_file:
-      - .env
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/myapp 
+      - PORT=9009
     depends_on:
       - mongo
     networks:
       - os-api-network
 
   mongo:
-    container_name: mongo
+    container_name: mongodb
     image: mongo:5.0
     volumes:
       - mongo-db:/data/db
