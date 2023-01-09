@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.6.1...v1.7.0) (2023-01-09)
+
+
+### Features
+
+* Added workflow which add data via POST Req ([#20](https://github.com/Pradumnasaraf/OpenSource-API/issues/20)) ([e8b532b](https://github.com/Pradumnasaraf/OpenSource-API/commit/e8b532b5c23d5d51dcc4e238d20a8bdf00cbcde0))
+
+
+
 ## [1.6.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.6.0...v1.6.1) (2023-01-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Dockerize the project ([#12](https://github.com/Pradumnasaraf/OpenSource-API/issues/12)) ([4967c97](https://github.com/Pradumnasaraf/OpenSource-API/commit/4967c97dc9da84c9770777b87481b7501c9ac74f))
-
-
-
-# [1.4.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.3.0...v1.4.0) (2022-09-09)
-
-
-### Features
-
-* Add code formatting dpens and controller ([#10](https://github.com/Pradumnasaraf/OpenSource-API/issues/10)) ([878d434](https://github.com/Pradumnasaraf/OpenSource-API/commit/878d4348ab7a882d17a697f22177f7c1c6a27edb))
 
 
 
