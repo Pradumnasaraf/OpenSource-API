@@ -19,6 +19,8 @@ services:
       - mongo
     networks:
       - os-api-network
+    volumes:
+      - .:/app
 
   mongo:
     container_name: mongodb

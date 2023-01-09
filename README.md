@@ -1,6 +1,6 @@
 <div align="center">
 <h2>OpenSource API</h2>
-<h3>An Open Source, free, and public API for learning purposes.<h3>
+<h3>An Open Source, free, and public API.<h3>
 </div>
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Pradumnasaraf/OpenSource-API)
@@ -13,13 +13,13 @@
 
 Base URL - `opensourceapi.vercel.app`
 
-Endpoints: **api/health**
+Endpoints: **api/devtip**
 
-- **GET:** - To get all the **health advice** data.
-- **POST** - Post a health advice. With body
+- **GET:** - To get all the Developer tips.
+- **POST** - Post a new Developer tip.
 
 ```json
 {
-  "message": "Drink lots of water"
+  "message": "Take breaks while coding"
 }
 ```

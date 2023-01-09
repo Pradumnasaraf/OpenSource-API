@@ -1,7 +1,7 @@
-const Health = require("../../models/schema.js");
-const updateHealth = async (req, res) => {
+const DevTip = require("../../models/devTip.js");
+const updateDevTip = async (req, res) => {
   try {
-    const health = await Health.findByIdAndUpdate(req.params.id, req.body, {
+    const devTip = await DevTip.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
       runValidators: true,
     });
@@ -9,7 +9,7 @@ const updateHealth = async (req, res) => {
     res.status(200).json({
       status: "Your data has been updated!",
       data: {
-        health,
+        devtip: devTip,
       },
     });
   } catch (e) {
@@ -18,4 +18,4 @@ const updateHealth = async (req, res) => {
     });
   }
 };
-module.exports = updateHealth;
+module.exports = updateDevTip;
