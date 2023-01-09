@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.5.1...v1.6.0) (2023-01-09)
+
+
+### Features
+
+* chnage the API theme to Dev tip ([#19](https://github.com/Pradumnasaraf/OpenSource-API/issues/19)) ([7ecc51d](https://github.com/Pradumnasaraf/OpenSource-API/commit/7ecc51dd5f9734b21efcbb513739f214f417da64))
+
+
+
 ## [1.5.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.5.0...v1.5.1) (2022-11-27)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * auto version support for `package-lock.json` ([09f3baf](https://github.com/Pradumnasaraf/OpenSource-API/commit/09f3baffa091a23a63f270c29b6df56a774e05cc))
-
-
-
-# [1.2.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.1.0...v1.2.0) (2022-06-27)
-
-
-### Features
-
-* seprate the styling and fix vercel.json ([3a091b8](https://github.com/Pradumnasaraf/OpenSource-API/commit/3a091b86c2c1073c4345c087ded0a8d79240eca0))
 
 
 
