@@ -24,3 +24,7 @@ body {
   text-decoration: none;
   color: rgb(250, 82, 82);
 }
+
+#developer a:hover {
+  color: rgb(255, 160, 43);
+}
