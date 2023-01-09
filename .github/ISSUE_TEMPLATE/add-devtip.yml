@@ -1,0 +1,12 @@
+name: Add a new Developer Tip
+title: New Developer Tip
+description: Include your Tip to the OpenSource API database.
+labels: ["dev-tip"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Developer Tip
+      description: Enter your tip here.
+    validations:
+      required: true

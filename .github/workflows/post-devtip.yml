@@ -1,0 +1,40 @@
+name: Post Request to API
+
+on:
+  workflow_dispatch:
+  issues:
+    types: [opened, edited]
+    
+jobs:
+
+  post-devtip:
+    name: Add data to DB via POST Request
+    if: contains(github.event.issue.labels.*.name, 'dev-tip')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloning the repo
+        uses: actions/checkout@v3
+      
+      - name: Getting data from Issue Form
+        uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/add-health-message.yml
+          
+      - name: Sending a POST Request to API
+        uses: fjogeleit/http-request-action@v1
+        id: myRequest
+        with:
+          url: 'https://opensourceapi.vercel.app/api/devtip'
+          method: 'POST'
+          customHeaders: '{"Content-Type": "application/json"}'
+          data: '{"message": "${{ steps.issue-parser.outputs.issueparser_message }}"}'
+          
+      - name: Printing out the response
+        run: |
+          echo ${{ fromJson(steps.myRequest.outputs.response).status }}
+          echo "With ID: ${{ fromJson(steps.myRequest.outputs.response).data.devtip._id }}"
+
+      - name: Closing the Issue
+        uses: YiiGuxing/close-issue@v2.1.0
