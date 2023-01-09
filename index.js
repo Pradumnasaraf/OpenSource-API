@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const router = require("./routes/router.js");
+const devTipRouter = require("./routes/devTipRouter.js");
 const logger = require("./middleware/logger.js");
 const ErrorHandle = require("./middleware/404.js");
 const path = require("path");
@@ -11,7 +11,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, "./public")));
 app.use(express.json());
 app.use(logger);
-app.use("/api/health", router);
+app.use("/api/devtip", devTipRouter);
 app.use(ErrorHandle);
 
 mongoose.set("strictQuery", false);

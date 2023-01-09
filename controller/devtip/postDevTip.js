@@ -1,11 +1,11 @@
-const Health = require("../../models/schema.js");
-const postHealth = async (req, res) => {
+const DevTip = require("../../models/devTip.js");
+const postDevTip = async (req, res) => {
   try {
-    const health = await Health.create(req.body);
+    const devTip = await DevTip.create(req.body);
     res.status(200).json({
       status: "Your data has been saved!",
       data: {
-        health,
+        devtip: devTip,
       },
     });
   } catch (e) {
@@ -15,4 +15,4 @@ const postHealth = async (req, res) => {
     });
   }
 };
-module.exports = postHealth;
+module.exports = postDevTip;
