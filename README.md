@@ -23,3 +23,5 @@ Endpoints: **api/devtip**
   "summary": "Take breaks while coding"
 }
 ```
+
+### Testing the API
