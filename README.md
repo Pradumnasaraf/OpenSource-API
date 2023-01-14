@@ -20,6 +20,8 @@ Endpoints: **api/devtip**
 
 ```json
 {
-  "message": "Take breaks while coding"
+  "summary": "Take breaks while coding"
 }
 ```
+
+### Testing the API

@@ -1,20 +1,26 @@
-const DevTip = require("../../models/devTip.js");
+const DevTip = require("../../models/devTipShhema.js");
 const updateDevTip = async (req, res) => {
   try {
+    if (!req.body.message) {
+      return res.status(400).json({
+        summary: "please provide a dev tip, message is empty.",
+      });
+    }
     const devTip = await DevTip.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
       runValidators: true,
     });
 
     res.status(200).json({
-      status: "Your data has been updated!",
+      summary: "your data has been updated!",
       data: {
         devtip: devTip,
       },
     });
   } catch (e) {
     res.status(400).json({
-      status: "fail",
+      summary:
+        "unable to update the dev tip, either the id is invalid or the dev tip is not found",
     });
   }
 };
