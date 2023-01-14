@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.7.0...v1.8.0) (2023-01-14)
+
+
+### Features
+
+* Add unit test fot the API ([#24](https://github.com/Pradumnasaraf/OpenSource-API/issues/24)) ([4074ea5](https://github.com/Pradumnasaraf/OpenSource-API/commit/4074ea52f010c3e4732ea998ce710b6f4d554eb9))
+
+
+
 # [1.7.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.6.1...v1.7.0) (2023-01-09)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * typo and HTML syntax ([61cf7f6](https://github.com/Pradumnasaraf/OpenSource-API/commit/61cf7f6681895cceccbcffa716fc9f972fc26460))
-
-
-
-# [1.5.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.4.0...v1.5.0) (2022-09-10)
-
-
-### Features
-
-* Dockerize the project ([#12](https://github.com/Pradumnasaraf/OpenSource-API/issues/12)) ([4967c97](https://github.com/Pradumnasaraf/OpenSource-API/commit/4967c97dc9da84c9770777b87481b7501c9ac74f))
 
 
 
