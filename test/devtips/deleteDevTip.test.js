@@ -1,6 +1,8 @@
 const chai = require("chai");
 const chaiHttp = require("chai-http");
 const server = require("../../index.js");
+require("dotenv").config();
+const testId = process.env.TEST_DEV_TIP_ID;
 
 // Assertion Style
 chai.should();
@@ -10,10 +12,9 @@ chai.use(chaiHttp);
 /* eslint-disable-next-line */
 describe("----- DELETE /api/devtip/:id -----", () => {
   it("It should DELETE a devtip by ID", (done) => {
-    const randomID = "63c13c24be5bda6b556d9a54";
     chai
       .request(server)
-      .delete("/api/devtip/" + randomID)
+      .delete("/api/devtip/" + testId)
       .end((err, response) => {
         response.should.have.status(200);
         response.body.should.be.a("object");

@@ -1,6 +1,8 @@
 const chai = require("chai");
 const chaiHttp = require("chai-http");
 const server = require("../../index.js");
+require("dotenv").config();
+const testId = process.env.TEST_DEV_TIP_ID;
 
 // Assertion Style
 chai.should();
@@ -10,10 +12,9 @@ chai.use(chaiHttp);
 
 describe("----- GET /api/devtip/:id -------", () => {
   it("It should GET a devtip by ID", (done) => {
-    const devtipID = "63c10a2abda8cc4f4dab001a";
     chai
       .request(server)
-      .get("/api/devtip/" + devtipID)
+      .get("/api/devtip/" + testId)
       .end((err, response) => {
         response.should.have.status(200);
         response.body.should.be.a("object");
