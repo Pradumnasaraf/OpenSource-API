@@ -9,7 +9,9 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "mocha test/**/*.test.js --exit",
+    "env": "cp .env.example .env"
   },
   "author": "Pradumna Saraf",
   "license": "MIT",
@@ -20,9 +22,12 @@
     "mongoose": "^6.3.6"
   },
   "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
     "eslint": "^8.23.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.16",
     "prettier": "2.7.1"
   },

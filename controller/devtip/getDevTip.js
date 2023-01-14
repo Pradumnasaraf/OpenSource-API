@@ -1,9 +1,9 @@
-const DevTip = require("../../models/devTip.js");
+const DevTip = require("../../models/devTipShhema.js");
 const getDevTip = async (req, res) => {
   try {
     const devTip = await DevTip.find();
     res.status(200).json({
-      status: "success",
+      summary: "success",
       results: devTip.length,
       data: {
         devtip: devTip,
@@ -11,7 +11,7 @@ const getDevTip = async (req, res) => {
     });
   } catch (e) {
     res.status(400).json({
-      status: "Dev Tips not found",
+      summary: "dev tip not found",
     });
   }
 };

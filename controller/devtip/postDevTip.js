@@ -1,9 +1,14 @@
-const DevTip = require("../../models/devTip.js");
+const DevTip = require("../../models/devTipShhema.js");
 const postDevTip = async (req, res) => {
   try {
+    if (!req.body.message) {
+      return res.status(400).json({
+        summary: "please provide a dev tip, message is empty.",
+      });
+    }
     const devTip = await DevTip.create(req.body);
-    res.status(200).json({
-      status: "Your data has been saved!",
+    res.status(201).json({
+      summary: "your dev tip has been saved",
       data: {
         devtip: devTip,
       },
@@ -11,7 +16,7 @@ const postDevTip = async (req, res) => {
   } catch (e) {
     console.log(e);
     res.status(400).json({
-      status: "fail",
+      summary: "unable to save the dev tip",
     });
   }
 };
