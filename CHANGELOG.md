@@ -1,3 +1,12 @@
+## [1.9.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.0...v1.9.1) (2023-01-15)
+
+
+### Bug Fixes
+
+* steps in gitpod.yml ([#27](https://github.com/Pradumnasaraf/OpenSource-API/issues/27)) ([61cd5d7](https://github.com/Pradumnasaraf/OpenSource-API/commit/61cd5d7a44044c87871623375d6b64acca93d3b1))
+
+
+
 # [1.9.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.8.0...v1.9.0) (2023-01-15)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update API homepage ([d1f2692](https://github.com/Pradumnasaraf/OpenSource-API/commit/d1f269206d6208420ebd378ee0a06f7aeccf849a))
-
-
-
-# [1.6.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.5.1...v1.6.0) (2023-01-09)
-
-
-### Features
-
-* chnage the API theme to Dev tip ([#19](https://github.com/Pradumnasaraf/OpenSource-API/issues/19)) ([7ecc51d](https://github.com/Pradumnasaraf/OpenSource-API/commit/7ecc51dd5f9734b21efcbb513739f214f417da64))
 
 
 
