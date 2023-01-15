@@ -1,0 +1,24 @@
+tasks:
+  - name: Database
+    command: |
+      mkdir -p /workspace/data && mongod --dbpath /workspace/data
+      
+  - name: Server
+    init: |
+      npm ci
+      npm run env
+    command:   
+      gp ports await 27017
+      npm run dev
+image:
+  file: .gitpod.Dockerfile
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: true
+    addComment: false
+    addBadge: true
