@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.8.0...v1.9.0) (2023-01-15)
+
+
+### Features
+
+* Added Gitpod support ([2843c05](https://github.com/Pradumnasaraf/OpenSource-API/commit/2843c05df1bad1adf4bd330dc4729ef0391fdf52))
+
+
+
 # [1.8.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.7.0...v1.8.0) (2023-01-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * chnage the API theme to Dev tip ([#19](https://github.com/Pradumnasaraf/OpenSource-API/issues/19)) ([7ecc51d](https://github.com/Pradumnasaraf/OpenSource-API/commit/7ecc51dd5f9734b21efcbb513739f214f417da64))
-
-
-
-## [1.5.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.5.0...v1.5.1) (2022-11-27)
-
-
-### Bug Fixes
-
-* typo and HTML syntax ([61cf7f6](https://github.com/Pradumnasaraf/OpenSource-API/commit/61cf7f6681895cceccbcffa716fc9f972fc26460))
 
 
 
