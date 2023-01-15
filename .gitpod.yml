@@ -10,6 +10,7 @@ tasks:
     command:   
       gp ports await 27017
       npm run dev
+      
 image:
   file: .gitpod.Dockerfile
 
