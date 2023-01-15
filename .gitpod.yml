@@ -8,6 +8,7 @@ tasks:
       npm ci
       npm run env
     command:   
+      eval $(gp env -e)
       gp ports await 27017
       npm run dev
       
