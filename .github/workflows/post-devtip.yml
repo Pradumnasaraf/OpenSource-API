@@ -37,3 +37,6 @@ jobs:
 
       - name: Closing the Issue
         uses: YiiGuxing/close-issue@v2.1.0
+        with:
+          comment: |
+            Hey, your **Dev Tip** has been added with the ID `_id: ${{ fromJson(steps.myRequest.outputs.response).data.devtip._id }}`.
