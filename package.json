@@ -1,7 +1,7 @@
 {
   "name": "opensource-api",
   "version": "1.9.0",
-  "description": "Free and public API",
+  "description": "A free and public Open Source API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,7 +11,7 @@
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
     "test": "mocha test/**/*.test.js --exit",
-    "env": "cp .env.test .env"
+    "env": "cp .env.example .env"
   },
   "author": "Pradumna Saraf",
   "license": "MIT",
