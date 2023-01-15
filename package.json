@@ -11,7 +11,7 @@
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
     "test": "mocha test/**/*.test.js --exit",
-    "env": "cp .env.exapmple .env"
+    "env": "cp .env.example .env"
   },
   "author": "Pradumna Saraf",
   "license": "MIT",
