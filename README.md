@@ -4,9 +4,9 @@
 
 ## Technlogy Used
 
-|  Server  | Database |   Testing   | Deployment |
-| :------: | :------: | :---------: | :--------: |
-| Node.js, Express, Mongoose | MongoDB | Mocha, Chai | Vercel |
+|           Server           | Database |   Testing   | Deployment |
+| :------------------------: | :------: | :---------: | :--------: |
+| Node.js, Express, Mongoose | MongoDB  | Mocha, Chai |   Vercel   |
 
 ## Developing the API
 
