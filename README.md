@@ -4,10 +4,9 @@
 
 ## Technlogy Used
 
-| Server | Database | Testing | Deployment|
-| :---:| :----:| :---: |:---: |
-|- Node.js, pressMongoose||||
-
+|          Server          | Database | Testing | Deployment |
+| :----------------------: | :------: | :-----: | :--------: |
+| - Node.js, pressMongoose |          |         |            |
 
 - MongoDB
 
@@ -19,7 +18,6 @@
 > Deployment
 
 - Vercel
-
 
 ## Developing the API
 
@@ -33,10 +31,7 @@
 docker compose up
 ```
 
-
 </div>
-
-
 
 ## Endpoints
 
