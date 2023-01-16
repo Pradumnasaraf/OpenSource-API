@@ -4,20 +4,9 @@
 
 ## Technlogy Used
 
-|          Server          | Database | Testing | Deployment |
-| :----------------------: | :------: | :-----: | :--------: |
-| - Node.js, pressMongoose |          |         |            |
-
-- MongoDB
-
-> For Testing
-
-- Mocha
-- Chai
-
-> Deployment
-
-- Vercel
+|  Server | Database | Testing | Deployment |
+| :-----: | :------: | :-----: | :--------: |
+| Node.js, Express, Mongoose | MongoDB | Mocha, Chai | Vercel |
 
 ## Developing the API
 
@@ -48,4 +37,12 @@ Endpoints: **api/devtip**
 }
 ```
 
-### Testing the API
+
+## 🛡️ License
+
+**OpenSource API** is licensed under the GPL-3.0 License - see the [LICENSE](/LICENSE) file for details.
+
+
+## 🙏 Support
+
+Don't forget to leave a star ⭐️
