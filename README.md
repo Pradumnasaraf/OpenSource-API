@@ -30,34 +30,18 @@ docker compose up
 
 You need to have Node.js installed and Mongo server on your localhost
 
-Step 1)
+Step 1: Copy `.env.example` to `.env`.
 
 ```
 npm run env
 ```
 
-It will copy `.env.example` to `.env`
-
-Step 2)
+Step 2: Run the app in development mode.
 
 ```
 npm run dev
 ```
 
-## Endpoints
-
-Base URL - `opensourceapi.vercel.app`
-
-Endpoints: **api/devtip**
-
-- **GET:** - To get all the Developer tips.
-- **POST** - Post a new Developer tip.
-
-```json
-{
-  "summary": "Take breaks while coding"
-}
-```
 
 ## 🛡️ License
 
