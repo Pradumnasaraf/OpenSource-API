@@ -6,7 +6,7 @@
 
 |  Server  | Database |   Testing   | Deployment |
 | :------: | :------: | :---------: | :--------: |
-| Node.js, Express, Mongoose | MongoDB  | Mocha, Chai |   Vercel   |
+| Node.js, Express, Mongoose | MongoDB | Mocha, Chai | Vercel |
 
 ## Developing the API
 
