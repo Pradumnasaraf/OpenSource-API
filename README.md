@@ -1,13 +1,42 @@
-<div align="center">
-<h2>OpenSource API</h2>
-<h3>An Open Source, free, and public API.<h3>
-</div>
+![OpenSource API banner](https://user-images.githubusercontent.com/51878265/212617054-61bc38e5-ea65-4594-a23c-f46de14b7fec.png)
+
+<h3 align="center" >An Open Source, free, and public API.<h3>
+
+## Technlogy Used
+
+| Server | Database | Testing | Deployment|
+| :---:| :----:| :---: |:---: |
+|- Node.js, pressMongoose||||
+
+
+- MongoDB
+
+> For Testing
+
+- Mocha
+- Chai
+
+> Deployment
+
+- Vercel
+
+
+## Developing the API
+
+**GitPod**
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Pradumnasaraf/OpenSource-API)
 
-## Tech
+**Docker Compose**
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"  height= "70"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height= "70" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="70" />
+```bash
+docker compose up
+```
+
+
+</div>
+
+
 
 ## Endpoints
 
