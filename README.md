@@ -6,8 +6,8 @@
 
 ## 🛠️ Technlogies used
 
-| Server  | Database |   Testing   | Deployment |
-| :-----: | :------: | :---------: | :--------: |
+|           Server           | Database |   Testing   | Deployment |
+| :------------------------: | :------: | :---------: | :--------: |
 | Node.js, Express, Mongoose | MongoDB  | Mocha, Chai |   Vercel   |
 
 ## 👨‍💻 Developing the API
@@ -27,10 +27,10 @@ You can run below command and you can access the API at `localhost:9009`
 ```bash
 docker compose up
 ```
-  
+
 **Local setup**
 
-Prerequisites-  Node.js installed and a Mongo server on your localhost.
+Prerequisites- Node.js installed and a Mongo server on your localhost.
 
 Step 1: Copy `.env.example` to `.env`.
 
