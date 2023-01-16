@@ -42,7 +42,6 @@ Step 2: Run the app in development mode.
 npm run dev
 ```
 
-
 ## 🛡️ License
 
 **OpenSource API** is licensed under the GPL-3.0 License - see the [LICENSE](/LICENSE) file for details.
