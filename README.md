@@ -6,8 +6,8 @@
 
 ## 🛠️ Technlogies used
 
-| Server  | Database |   Testing   | Deployment |
-| :-----: | :------: | :---------: | :--------: |
+|           Server           | Database |   Testing   | Deployment |
+| :------------------------: | :------: | :---------: | :--------: |
 | Node.js, Express, Mongoose | MongoDB  | Mocha, Chai |   Vercel   |
 
 ## 👨‍💻 Developing the API
@@ -20,7 +20,7 @@ This section includes how to test and develop API at your end.
 
 **Docker Compose**
 
-Prerequisites-  Docker and Compose installed in your local system.
+Prerequisites- Docker and Compose installed in your local system.
 
 ```bash
 docker compose up
@@ -28,7 +28,7 @@ docker compose up
 
 **Local Setup**
 
-Prerequisites-  Node.js installed and a Mongo server on your localhost.
+Prerequisites- Node.js installed and a Mongo server on your localhost.
 
 Step 1: Copy `.env.example` to `.env`.
 
