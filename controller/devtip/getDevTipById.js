@@ -1,4 +1,4 @@
-const DevTip = require("../../models/devTipShhema.js");
+const DevTip = require("../../models/devTipSchema.js");
 const getDevTipByID = async (req, res) => {
   try {
     const devTip = await DevTip.findById(req.params.id);

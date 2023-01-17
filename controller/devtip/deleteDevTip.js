@@ -1,4 +1,4 @@
-const DevTip = require("../../models/devTipShhema.js");
+const DevTip = require("../../models/devTipSchema.js");
 const deleteDevTip = async (req, res) => {
   try {
     await DevTip.findByIdAndDelete(req.params.id);
