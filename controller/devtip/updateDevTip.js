@@ -1,4 +1,4 @@
-const DevTip = require("../../models/devTipShhema.js");
+const DevTip = require("../../models/devTipSchema.js");
 const updateDevTip = async (req, res) => {
   try {
     if (!req.body.message) {
