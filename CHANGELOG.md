@@ -1,3 +1,12 @@
+## [1.9.2](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.1...v1.9.2) (2023-01-17)
+
+
+### Bug Fixes
+
+* **devTipSchema:** typo fixed & updated references - [@meetwithyash](https://github.com/meetwithyash)  ([#31](https://github.com/Pradumnasaraf/OpenSource-API/issues/31)) ([d1569a3](https://github.com/Pradumnasaraf/OpenSource-API/commit/d1569a38c4a3ce01c41546673e1cedf57915e4f6))
+
+
+
 ## [1.9.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.0...v1.9.1) (2023-01-15)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Added workflow which add data via POST Req ([#20](https://github.com/Pradumnasaraf/OpenSource-API/issues/20)) ([e8b532b](https://github.com/Pradumnasaraf/OpenSource-API/commit/e8b532b5c23d5d51dcc4e238d20a8bdf00cbcde0))
-
-
-
-## [1.6.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.6.0...v1.6.1) (2023-01-09)
-
-
-### Bug Fixes
-
-* update API homepage ([d1f2692](https://github.com/Pradumnasaraf/OpenSource-API/commit/d1f269206d6208420ebd378ee0a06f7aeccf849a))
 
 
 
