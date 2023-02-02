@@ -1,3 +1,12 @@
+# [1.10.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.2...v1.10.0) (2023-02-02)
+
+
+### Features
+
+* Added urlencoded bodyparser support ([2289156](https://github.com/Pradumnasaraf/OpenSource-API/commit/228915643d8e8b27c39c14da1e9f16fde3c87198))
+
+
+
 ## [1.9.2](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.1...v1.9.2) (2023-01-17)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Add unit test fot the API ([#24](https://github.com/Pradumnasaraf/OpenSource-API/issues/24)) ([4074ea5](https://github.com/Pradumnasaraf/OpenSource-API/commit/4074ea52f010c3e4732ea998ce710b6f4d554eb9))
-
-
-
-# [1.7.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.6.1...v1.7.0) (2023-01-09)
-
-
-### Features
-
-* Added workflow which add data via POST Req ([#20](https://github.com/Pradumnasaraf/OpenSource-API/issues/20)) ([e8b532b](https://github.com/Pradumnasaraf/OpenSource-API/commit/e8b532b5c23d5d51dcc4e238d20a8bdf00cbcde0))
 
 
 
