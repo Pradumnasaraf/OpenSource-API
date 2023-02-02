@@ -10,6 +10,7 @@ const app = express();
 // eslint-disable-next-line no-undef
 app.use(express.static(path.join(__dirname, "./public")));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(logger);
 app.use("/api/devtip", devTipRouter);
 app.use(ErrorHandle);
