@@ -1,10 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const devTipRouter = require("./routes/devTipRouter.js");
+const path = require("path");
 const logger = require("./middleware/logger.js");
 const ErrorHandle = require("./middleware/404.js");
-const path = require("path");
-require("dotenv").config();
+const devTipRouter = require("./routes/devTipRouter.js");
+const { MONGODB_URL, PORT } = require("./config/config.js");
 const app = express();
 
 // eslint-disable-next-line no-undef
@@ -18,7 +18,7 @@ app.use(ErrorHandle);
 mongoose.set("strictQuery", false);
 mongoose
   // eslint-disable-next-line no-undef
-  .connect(process.env.MONGODB_URL, {
+  .connect(MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -30,9 +30,8 @@ mongoose
   });
 
 // eslint-disable-next-line no-undef
-const PORT = process.env.PORT || 9009;
 app.listen(PORT, () =>
-  console.log(`Server is LIVE on -> http://localhost:${PORT}`)
+  console.log(`Server is LIVE at -> http://localhost:${PORT}`)
 );
 
 module.exports = app;
