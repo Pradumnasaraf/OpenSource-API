@@ -1,3 +1,12 @@
+# [1.11.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.10.0...v1.11.0) (2023-02-10)
+
+
+### Features
+
+* add config file support ([f296b53](https://github.com/Pradumnasaraf/OpenSource-API/commit/f296b5358ff4302ee12e15f1fdbb96cdbd7286b7))
+
+
+
 # [1.10.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.2...v1.10.0) (2023-02-02)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Added Gitpod support ([2843c05](https://github.com/Pradumnasaraf/OpenSource-API/commit/2843c05df1bad1adf4bd330dc4729ef0391fdf52))
-
-
-
-# [1.8.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.7.0...v1.8.0) (2023-01-14)
-
-
-### Features
-
-* Add unit test fot the API ([#24](https://github.com/Pradumnasaraf/OpenSource-API/issues/24)) ([4074ea5](https://github.com/Pradumnasaraf/OpenSource-API/commit/4074ea52f010c3e4732ea998ce710b6f4d554eb9))
 
 
 
