@@ -16,6 +16,18 @@
 | :------------------------: | :------: | :---------: | :--------: |
 | Node.js, Express, Mongoose | MongoDB  | Mocha, Chai |   Vercel   |
 
+## 📌 Endpoints
+
+| Endpoints          | Description                 | Method |
+| :----------------- | :-------------------------- | :----- |
+| `/`                | Home page.                  | GET    |
+| `/api/devtips`     | Returns a list of dev tips. | GET    |
+| `/api/devtips/:id` | Returns a single dev tip.   | GET    |
+| `/api/devtips`     | Creates a new dev tip.      | POST   |
+| `/api/devtips/:id` | Updates a dev tip.          | PATCH  |
+| `/api/devtips/:id` | Deletes a dev tip.          | DELETE |
+|                    |                             |        |
+
 ## 👨‍💻 Developing the API
 
 This section includes how to test and develop API at your end. You can either run it in the cloud using **Gitpod** or run it inside a container using **docker** or choose to set up the complete environment locally.
