@@ -21,11 +21,11 @@
 | Endpoints          | Description                 | Method |
 | :----------------- | :-------------------------- | :----- |
 | `/`                | Home page.                  | GET    |
-| `/api/devtips`     | Returns a list of dev tips. | GET    |
-| `/api/devtips/:id` | Returns a single dev tip.   | GET    |
-| `/api/devtips`     | Creates a new dev tip.      | POST   |
-| `/api/devtips/:id` | Updates a dev tip.          | PATCH  |
-| `/api/devtips/:id` | Deletes a dev tip.          | DELETE |
+| `/api/devtip`     | Returns a list of dev tips. | GET    |
+| `/api/devtip/:id` | Returns a single dev tip.   | GET    |
+| `/api/devtip`     | Creates a new dev tip.      | POST   |
+| `/api/devtip/:id` | Updates a dev tip.          | PATCH  |
+| `/api/devtip/:id` | Deletes a dev tip.          | DELETE |
 |                    |                             |        |
 
 ## 👨‍💻 Developing the API
