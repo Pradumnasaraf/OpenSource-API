@@ -50,6 +50,8 @@ docker compose up
 
 Prerequisites- Node.js installed and a Mongo server on your localhost.
 
+Make sure you have installed all the dependencies and you have a MongoDB server running on your local machine. Also, make sure are in the root directory of the project.
+
 Step 1: Copy `.env.example` to `.env`.
 
 ```
