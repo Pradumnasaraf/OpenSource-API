@@ -1,3 +1,12 @@
+## [1.11.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.11.0...v1.11.1) (2023-05-31)
+
+
+### Bug Fixes
+
+* Add version to GHCR and DockerHub images ([83bf3aa](https://github.com/Pradumnasaraf/OpenSource-API/commit/83bf3aac35f45e8d13bff7010483bdef71e00b32))
+
+
+
 # [1.11.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.10.0...v1.11.0) (2023-02-10)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * steps in gitpod.yml ([#27](https://github.com/Pradumnasaraf/OpenSource-API/issues/27)) ([61cd5d7](https://github.com/Pradumnasaraf/OpenSource-API/commit/61cd5d7a44044c87871623375d6b64acca93d3b1))
-
-
-
-# [1.9.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.8.0...v1.9.0) (2023-01-15)
-
-
-### Features
-
-* Added Gitpod support ([2843c05](https://github.com/Pradumnasaraf/OpenSource-API/commit/2843c05df1bad1adf4bd330dc4729ef0391fdf52))
 
 
 
