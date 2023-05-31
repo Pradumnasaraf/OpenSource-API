@@ -54,13 +54,13 @@ Make sure you have installed all the dependencies and you have a MongoDB server 
 
 Step 1: Copy `.env.example` to `.env`.
 
-```
+```bash
 npm run env
 ```
 
 Step 2: Run the app in development mode.
 
-```
+```bash
 npm run dev
 ```
 
