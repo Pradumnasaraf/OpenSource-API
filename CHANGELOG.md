@@ -1,3 +1,12 @@
+## [1.11.2](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.11.1...v1.11.2) (2023-05-31)
+
+
+### Bug Fixes
+
+* compose mongo version + change action secret ([3d1c291](https://github.com/Pradumnasaraf/OpenSource-API/commit/3d1c291b912ee4327e9fd9dfe57c60890e1a0ccf))
+
+
+
 ## [1.11.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.11.0...v1.11.1) (2023-05-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **devTipSchema:** typo fixed & updated references - [@meetwithyash](https://github.com/meetwithyash)  ([#31](https://github.com/Pradumnasaraf/OpenSource-API/issues/31)) ([d1569a3](https://github.com/Pradumnasaraf/OpenSource-API/commit/d1569a38c4a3ce01c41546673e1cedf57915e4f6))
-
-
-
-## [1.9.1](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.0...v1.9.1) (2023-01-15)
-
-
-### Bug Fixes
-
-* steps in gitpod.yml ([#27](https://github.com/Pradumnasaraf/OpenSource-API/issues/27)) ([61cd5d7](https://github.com/Pradumnasaraf/OpenSource-API/commit/61cd5d7a44044c87871623375d6b64acca93d3b1))
 
 
 
