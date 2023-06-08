@@ -9,18 +9,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      # Checkout the repo
+      - name: Create temporary branch
+        uses: peterjgrainger/action-create-branch@v2.3.0
+        id: create-branch
+        with:
+          branch: "release-from-${{ github.sha }}"
+          sha: "${{ github.sha }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: conventional Changelog Action
+      # Checkout the repo
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+
+      # Fetch branches and switch branch to the temporary one
+      - name: Fetch branches and switch branch
+        run: git fetch --all && git checkout --track origin/release-from-${{ github.sha }}
+
+      # Use Conventional Changelog action to generate changelog and tag
+      - name: Conventional Changelog + Tag Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.PA_TOKEN }}
-          version-file: "./package.json,./package-lock.json"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          version-file: "./releases.json"
+          git-branch: "release-from-${{ github.sha }}"
+          skip-on-empty: false
+          skip-git-pull: true
 
-      - name: create release
+      # Create the PR with the chamgelog changes
+      - name: Create PR with release info
+        id: create-pr
+        run: gh pr create --base main --head release-from-${{ github.sha }} --title 'changelog - new release info' --body 'PR is auto genraated an will be merged automatically with the release info'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Auto merge the PR
+      - name: Auto merge PR with release info
+        id: merge-pr
+        run: gh pr merge --admin --merge --subject 'Auto merging release info' --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Create the release if there is SemVer tag
+      - name: Create a release
         uses: actions/create-release@v1
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        if: steps.changelog.outputs.skipped == 'false'
         env:
           GITHUB_TOKEN: ${{ secrets.PA_TOKEN }}
         with:
