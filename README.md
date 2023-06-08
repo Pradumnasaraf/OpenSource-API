@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<h3 >An Open Source, free, and public API.<h3>
+<h3>An Open Source, free, and public API.<h3>
 
 [![Publish Docker Image to DockerHub](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/publish-dockerhub.yml/badge.svg)](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/publish-dockerhub.yml) [![Publish Image to GitHub Container Registry](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/publish-ghcr.yml/badge.svg)](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/publish-ghcr.yml) [![Unit Tests](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/unit-testing.yml/badge.svg)](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/unit-testing.yml) [![Format](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/prettier.yml/badge.svg)](https://github.com/Pradumnasaraf/OpenSource-API/actions/workflows/prettier.yml)
 
