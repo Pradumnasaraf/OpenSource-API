@@ -1,21 +1,60 @@
 name: Format
-on: [push, workflow_dispatch, pull_request]
+on:
+  workflow_dispatch:
+  #Runs at 01:01 UTC
+  schedule:
+    - cron: "1 1 * * *"
+
+concurrency:
+  group: "main-branch"
 
 jobs:
   format:
+    name: Format the JS and MD files
     runs-on: ubuntu-latest
-    name: Format Files
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: "16"
-      - run: npm ci
-      - name: Prettier
+          node-version: "18"
+          cache: "npm"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm ci
+        
+      # Run Prettier
+      - name: Run Prettier
         run: npx prettier --write '**/*.js' '*.{js,md}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
+
+      # Auto commit changes
+      - name: Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        id: format-files
         with:
           commit_message: "style: format files"
+          skip_checkout: true
+          branch: "formatting-${{ github.sha }}"
+          create_branch: true
+
+      # Create PR using with the changes
+      - name: Create PR with adjusted formatting
+        if: steps.format-files.outputs.changes_detected == 'true'
+        id: create-pr
+        run: git checkout formatting-${{ github.sha }} && gh pr create --base main --head formatting-${{ github.sha }} --title 'Merge formatting into main' --body 'Created by Github action'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Auto merge PR
+      - name: merge PR with adjusted formatting
+        if: steps.format-files.outputs.changes_detected == 'true'
+        id: merge-pr
+        run:  gh pr merge --admin --merge --subject 'Auto merging formatting PR` --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
