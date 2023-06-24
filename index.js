@@ -8,7 +8,7 @@ import devTipRouter from "./routes/devTipRouter.js";
 import { MONGODB_URL, DB_NAME, PORT } from "./config/config.js";
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.dirname(__filenam
 
 // eslint-disable-next-line no-undef
 app.use("/", express.static(path.join(__dirname, "./public")));
