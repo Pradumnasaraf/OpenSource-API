@@ -21,6 +21,9 @@ jobs:
       - name: Checking and cloning the repo
         uses: actions/checkout@v3
 
+      - name: Copying the env file
+        run: cp .env.example .env
+
       - name: Node Instllation
         uses: actions/setup-node@v3
         with:
