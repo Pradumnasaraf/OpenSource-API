@@ -7,7 +7,7 @@ import { MONGODB_URL, DB_NAME, PORT } from "./config/config.js";
 const app = express();
 
 // eslint-disable-next-line no-undef
-app.use("/", express.static("public"));
+app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(logger);
