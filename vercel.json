@@ -1,5 +1,5 @@
 {
-  "name": "Open-API",
+  "name": "OpenScource-API",
   "version": 2,
   "builds": [
     {
@@ -8,6 +8,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/" ,
+      "destination": "/"
+    },
     {
       "source": "/(.*)",
       "destination": "/"
