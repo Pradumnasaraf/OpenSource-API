@@ -14,7 +14,7 @@ describe("----- GET /api/devtip -----", () => {
       .request(server)
       .get("/api/devtip")
       .end((err, response) => {
-        response.should.have.status(400);
+        response.should.have.status(200);
         response.body.should.be.a("object");
         response.body.should.have.property("data");
         response.body.should.have.property("results");
