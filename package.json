@@ -34,5 +34,8 @@
     "*.{js,md}": "prettier --write",
     "*.js": "eslint --fix"
   },
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
