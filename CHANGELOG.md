@@ -1,3 +1,12 @@
+# [1.12.0](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.11.2...v1.12.0) (2023-06-24)
+
+
+### Features
+
+* change API to ES6 ([#55](https://github.com/Pradumnasaraf/OpenSource-API/issues/55)) ([3007755](https://github.com/Pradumnasaraf/OpenSource-API/commit/3007755593cc6fd862eda741b267cf81f1ed57af))
+
+
+
 ## [1.11.2](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.11.1...v1.11.2) (2023-05-31)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Added urlencoded bodyparser support ([2289156](https://github.com/Pradumnasaraf/OpenSource-API/commit/228915643d8e8b27c39c14da1e9f16fde3c87198))
-
-
-
-## [1.9.2](https://github.com/Pradumnasaraf/OpenSource-API/compare/v1.9.1...v1.9.2) (2023-01-17)
-
-
-### Bug Fixes
-
-* **devTipSchema:** typo fixed & updated references - [@meetwithyash](https://github.com/meetwithyash)  ([#31](https://github.com/Pradumnasaraf/OpenSource-API/issues/31)) ([d1569a3](https://github.com/Pradumnasaraf/OpenSource-API/commit/d1569a38c4a3ce01c41546673e1cedf57915e4f6))
 
 
 

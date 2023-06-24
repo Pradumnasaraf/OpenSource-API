@@ -1,6 +1,6 @@
 {
   "name": "opensource-api",
-  "version": "1.11.2",
+  "version": "1.12.0",
   "description": "A free and public Open Source API",
   "main": "index.js",
   "scripts": {
