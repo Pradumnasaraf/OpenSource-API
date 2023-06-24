@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Unit Tests + Lint
 
 on:
   workflow_dispatch:
@@ -28,8 +28,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
+
       - name: Install dependencies
         run: npm ci
+
+      - name: Run lint
+        run: npm run lint
 
       - name: Run tests
         run: npm test
