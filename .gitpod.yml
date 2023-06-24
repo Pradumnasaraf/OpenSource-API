@@ -2,14 +2,13 @@ tasks:
   - name: Database
     command: |
       mkdir -p /workspace/data && mongod --dbpath /workspace/data
-      
+
   - name: Server
     init: |
       npm ci
       npm run env
-    command:   
-      npm run dev
-      
+    command: npm run dev
+
 image:
   file: .gitpod.Dockerfile
 

@@ -1,10 +1,17 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
+import { COLLECTION_NAME } from "../config/config.js";
 
-const devtip = new mongoose.Schema({
-  message: {
-    type: String,
-    required: true,
+const devtip = new mongoose.Schema(
+  {
+    message: {
+      type: String,
+      required: true,
+    },
   },
-});
+  {
+    versionKey: false, // Set versionKey option to false
+    collection: COLLECTION_NAME,
+  }
+);
 
-module.exports = mongoose.model("devtip", devtip);
+export default mongoose.model("devtipss", devtip);

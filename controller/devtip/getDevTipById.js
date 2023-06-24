@@ -1,4 +1,4 @@
-const DevTip = require("../../models/devTipSchema.js");
+import DevTip from "../../models/devTipSchema.js";
 const getDevTipByID = async (req, res) => {
   try {
     const devTip = await DevTip.findById(req.params.id);
@@ -14,4 +14,5 @@ const getDevTipByID = async (req, res) => {
     });
   }
 };
-module.exports = getDevTipByID;
+
+export default getDevTipByID;

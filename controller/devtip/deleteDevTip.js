@@ -1,4 +1,4 @@
-const DevTip = require("../../models/devTipSchema.js");
+import DevTip from "../../models/devTipSchema.js";
 const deleteDevTip = async (req, res) => {
   try {
     await DevTip.findByIdAndDelete(req.params.id);
@@ -10,4 +10,4 @@ const deleteDevTip = async (req, res) => {
     });
   }
 };
-module.exports = deleteDevTip;
+export default deleteDevTip;

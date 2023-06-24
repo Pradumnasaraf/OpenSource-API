@@ -1,4 +1,4 @@
-const DevTip = require("../../models/devTipSchema.js");
+import DevTip from "../../models/devTipSchema.js";
 const getDevTip = async (req, res) => {
   try {
     const devTip = await DevTip.find();
@@ -15,4 +15,4 @@ const getDevTip = async (req, res) => {
     });
   }
 };
-module.exports = getDevTip;
+export default getDevTip;

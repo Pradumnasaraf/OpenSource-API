@@ -1,14 +1,13 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const path = require("path");
-const logger = require("./middleware/logger.js");
-const ErrorHandle = require("./middleware/404.js");
-const devTipRouter = require("./routes/devTipRouter.js");
-const { MONGODB_URL, PORT } = require("./config/config.js");
+import express from "express";
+import mongoose from "mongoose";
+import logger from "./middleware/logger.js";
+import ErrorHandle from "./middleware/404.js";
+import devTipRouter from "./routes/devTipRouter.js";
+import { MONGODB_URL, DB_NAME, PORT } from "./config/config.js";
 const app = express();
 
 // eslint-disable-next-line no-undef
-app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(logger);
@@ -21,6 +20,7 @@ mongoose
   .connect(MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    dbName: DB_NAME,
   })
   .then(() => {
     console.log("Successfully connected to MongoDB");
@@ -34,4 +34,4 @@ app.listen(PORT, () =>
   console.log(`Server is LIVE at -> http://localhost:${PORT}`)
 );
 
-module.exports = app;
+export default app;

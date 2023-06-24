@@ -1,4 +1,4 @@
-const DevTip = require("../../models/devTipSchema.js");
+import DevTip from "../../models/devTipSchema.js";
 const postDevTip = async (req, res) => {
   try {
     if (!req.body.message) {
@@ -20,4 +20,5 @@ const postDevTip = async (req, res) => {
     });
   }
 };
-module.exports = postDevTip;
+
+export default postDevTip;
