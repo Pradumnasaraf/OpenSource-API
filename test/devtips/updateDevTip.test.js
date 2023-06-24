@@ -1,7 +1,8 @@
-const chai = require("chai");
-const chaiHttp = require("chai-http");
-const server = require("../../index.js");
-require("dotenv").config();
+import chai from "chai";
+import chaiHttp from "chai-http";
+import server from "../../index.js";
+import dotenv from "dotenv";
+dotenv.config();
 const testId = process.env.TEST_DEV_TIP_ID;
 
 // Assertion Style
