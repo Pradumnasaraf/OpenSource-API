@@ -32,7 +32,7 @@ describe("----- DELETE /api/devtip/:id -----", () => {
       .request(server)
       .delete("/api/devtip/" + randomID)
       .end((err, response) => {
-        response.should.have.status(400);
+        response.should.have.status(501);
         response.body.should.have
           .property("summary")
           .eq(

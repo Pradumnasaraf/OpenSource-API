@@ -1,7 +1,6 @@
 name: Post Request to API
 
 on:
-  workflow_dispatch:
   issues:
     types: [opened, edited]
 
