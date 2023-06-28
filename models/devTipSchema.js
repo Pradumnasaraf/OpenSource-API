@@ -10,7 +10,7 @@ const devtip = new mongoose.Schema(
   },
   {
     versionKey: false, // Set versionKey option to false (__v)
-    collection: COLLECTION_NAME, // Set Collection name from .env file
+    collection: COLLECTION_NAME, // Set collection name from .env file
   }
 );
 
