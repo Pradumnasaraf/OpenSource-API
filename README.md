@@ -8,8 +8,6 @@
 
 </div>
 
-
-
 <br>
 
 ## 🛠️ Technlogies used
