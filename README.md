@@ -70,4 +70,4 @@ npm run dev
 
 ## 🤝 Support
 
-Don't forget to leave a star ⭐️
+Don't forget to leave a star ⭐️.
