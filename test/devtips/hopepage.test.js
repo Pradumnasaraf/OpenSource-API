@@ -1,5 +1,5 @@
-import chai from "chai";
-import chaiHttp from "chai-http";
+import * as chai from "chai";
+import chaiHttp, { request } from "chai-http";
 import server from "../../index.js";
 
 // Assertion Style
@@ -8,8 +8,8 @@ chai.use(chaiHttp);
 
 describe("----- GET / HOMEPAGE -----", () => {
   it("It should GET the HTML home page", (done) => {
-    chai
-      .request(server)
+    request
+      .execute(server)
       .get("/")
       .end((err, response) => {
         response.should.have.status(200);

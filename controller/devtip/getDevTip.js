@@ -9,7 +9,7 @@ const getDevTip = async (req, res) => {
         devtip: devTip,
       },
     });
-  } catch (e) {
+  } catch {
     res.status(400).json({
       summary: "dev tip not found",
     });

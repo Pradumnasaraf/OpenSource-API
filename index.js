@@ -10,7 +10,6 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// eslint-disable-next-line no-undef
 app.use("/", express.static(path.join(__dirname, "./public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -20,10 +19,7 @@ app.use(ErrorHandle);
 
 mongoose.set("strictQuery", false);
 mongoose
-  // eslint-disable-next-line no-undef
   .connect(MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
     dbName: DB_NAME,
   })
   .then(() => {
@@ -33,9 +29,8 @@ mongoose
     console.log(err);
   });
 
-// eslint-disable-next-line no-undef
 app.listen(PORT, () =>
-  console.log(`Server is LIVE at -> http://localhost:${PORT}`)
+  console.log(`Server is LIVE at -> http://localhost:${PORT}`),
 );
 
 export default app;

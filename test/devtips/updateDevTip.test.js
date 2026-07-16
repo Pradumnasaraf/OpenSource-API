@@ -1,5 +1,5 @@
-import chai from "chai";
-import chaiHttp from "chai-http";
+import * as chai from "chai";
+import chaiHttp, { request } from "chai-http";
 import server from "../../index.js";
 import dotenv from "dotenv";
 dotenv.config();
@@ -14,8 +14,8 @@ describe("----- UPDATE /api/devtip/:id -----", () => {
     const devtip = {
       message: "Test Dev Tip Message",
     };
-    chai
-      .request(server)
+    request
+      .execute(server)
       .patch("/api/devtip/" + testId)
       .send(devtip)
       .end((err, response) => {
@@ -33,8 +33,8 @@ describe("----- UPDATE /api/devtip/:id -----", () => {
     const devtip = {
       message: "Test Dev Tip Message",
     };
-    chai
-      .request(server)
+    request
+      .execute(server)
       .patch("/api/devtip/" + testID)
       .send(devtip)
       .end((err, response) => {
@@ -43,7 +43,7 @@ describe("----- UPDATE /api/devtip/:id -----", () => {
         response.body.should.have
           .property("summary")
           .eq(
-            "unable to update the dev tip, either the id is invalid or the dev tip is not found"
+            "unable to update the dev tip, either the id is invalid or the dev tip is not found",
           );
       });
     done();
@@ -54,8 +54,8 @@ describe("----- UPDATE /api/devtip/:id -----", () => {
     const devtip = {
       message: "",
     };
-    chai
-      .request(server)
+    request
+      .execute(server)
       .patch("/api/devtip/" + testID)
       .send(devtip)
       .end((err, response) => {

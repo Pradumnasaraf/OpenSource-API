@@ -8,7 +8,7 @@ const getDevTipByID = async (req, res) => {
         devtip: devTip,
       },
     });
-  } catch (e) {
+  } catch {
     res.status(400).json({
       summary: "either the id is invalid or the dev tip is not found",
     });

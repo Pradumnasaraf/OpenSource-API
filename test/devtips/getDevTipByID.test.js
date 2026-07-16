@@ -1,5 +1,5 @@
-import chai from "chai";
-import chaiHttp from "chai-http";
+import * as chai from "chai";
+import chaiHttp, { request } from "chai-http";
 import server from "../../index.js";
 import dotenv from "dotenv";
 dotenv.config();
@@ -13,8 +13,8 @@ chai.use(chaiHttp);
 
 describe("----- GET /api/devtip/:id -------", () => {
   it("It should GET a devtip by ID", (done) => {
-    chai
-      .request(server)
+    request
+      .execute(server)
       .get("/api/devtip/" + testId)
       .end((err, response) => {
         response.should.have.status(200);
@@ -26,8 +26,8 @@ describe("----- GET /api/devtip/:id -------", () => {
   });
   it("It should NOT GET a devtip by ID", (done) => {
     const randomID = "5656";
-    chai
-      .request(server)
+    request
+      .execute(server)
       .get("/api/devtip/" + randomID)
       .end((err, response) => {
         response.should.have.status(400);

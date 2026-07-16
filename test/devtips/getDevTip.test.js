@@ -1,5 +1,5 @@
-import chai from "chai";
-import chaiHttp from "chai-http";
+import * as chai from "chai";
+import chaiHttp, { request } from "chai-http";
 import server from "../../index.js";
 
 // Assertion Style
@@ -10,8 +10,8 @@ chai.use(chaiHttp);
 
 describe("----- GET /api/devtip -----", () => {
   it("It should GET all the devtips", (done) => {
-    chai
-      .request(server)
+    request
+      .execute(server)
       .get("/api/devtip")
       .end((err, response) => {
         response.should.have.status(200);
@@ -23,8 +23,8 @@ describe("----- GET /api/devtip -----", () => {
     done();
   });
   it("It should NOT GET all the devtips", (done) => {
-    chai
-      .request(server)
+    request
+      .execute(server)
       .get("/api/devtips")
       .end((err, response) => {
         response.should.have.status(404);

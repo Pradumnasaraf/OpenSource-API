@@ -1,5 +1,5 @@
-import chai from "chai";
-import chaiHttp from "chai-http";
+import * as chai from "chai";
+import chaiHttp, { request } from "chai-http";
 import server from "../../index.js";
 
 // Assertion Style
@@ -11,8 +11,8 @@ describe("----- POST /api/devtip -----", () => {
     const devtip = {
       message: "Test Dev Tip Message",
     };
-    chai
-      .request(server)
+    request
+      .execute(server)
       .post("/api/devtip")
       .send(devtip)
       .end((err, response) => {
@@ -29,8 +29,8 @@ describe("----- POST /api/devtip -----", () => {
     const devtip = {
       message: "",
     };
-    chai
-      .request(server)
+    request
+      .execute(server)
       .post("/api/devtip")
       .send(devtip)
       .end((err, response) => {

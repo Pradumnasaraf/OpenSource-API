@@ -7,7 +7,7 @@ const updateDevTip = async (req, res) => {
       });
     }
     const devTip = await DevTip.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
+      returnDocument: "after",
       runValidators: true,
     });
 
@@ -17,7 +17,7 @@ const updateDevTip = async (req, res) => {
         devtip: devTip,
       },
     });
-  } catch (e) {
+  } catch {
     res.status(400).json({
       summary:
         "unable to update the dev tip, either the id is invalid or the dev tip is not found",

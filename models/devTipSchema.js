@@ -11,7 +11,7 @@ const devtip = new mongoose.Schema(
   {
     versionKey: false, // Set versionKey option to false (__v)
     collection: COLLECTION_NAME, // Set collection name from .env file
-  }
+  },
 );
 
 export default mongoose.model("devtipss", devtip);

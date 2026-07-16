@@ -1,5 +1,5 @@
-import chai from "chai";
-import chaiHttp from "chai-http";
+import * as chai from "chai";
+import chaiHttp, { request } from "chai-http";
 import server from "../../index.js";
 import dotenv from "dotenv";
 dotenv.config();
@@ -13,8 +13,8 @@ chai.use(chaiHttp);
 /* eslint-disable-next-line */
 describe("----- DELETE /api/devtip/:id -----", () => {
   it("It should DELETE a devtip by ID", (done) => {
-    chai
-      .request(server)
+    request
+      .execute(server)
       .delete("/api/devtip/" + testId)
       .end((err, response) => {
         response.should.have.status(200);
@@ -28,15 +28,15 @@ describe("----- DELETE /api/devtip/:id -----", () => {
 
   it("It should NOT DELETE a devtip by ID", (done) => {
     const randomID = "1010";
-    chai
-      .request(server)
+    request
+      .execute(server)
       .delete("/api/devtip/" + randomID)
       .end((err, response) => {
         response.should.have.status(400);
         response.body.should.have
           .property("summary")
           .eq(
-            "unable to delete the dev tip, either the id is invalid or the Dev Tip is not found"
+            "unable to delete the dev tip, either the id is invalid or the Dev Tip is not found",
           );
       });
     done();
