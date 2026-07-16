@@ -19,13 +19,13 @@ jobs:
           - 27017:27017
     steps:
       - name: Checking and cloning the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Copying the env file
         run: npm run env
 
       - name: Node Instllation
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
           node-version: "18"
 

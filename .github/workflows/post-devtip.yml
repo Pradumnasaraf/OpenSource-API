@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Cloning the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Getting data from Issue Form
         uses: stefanbuck/github-issue-parser@v3
@@ -21,7 +21,7 @@ jobs:
           template-path: .github/ISSUE_TEMPLATE/add-devtip.yml
 
       - name: Sending a POST Request to API
-        uses: fjogeleit/http-request-action@v1
+        uses: fjogeleit/http-request-action@v2
         id: myRequest
         with:
           url: ${{ vars.API_URL }}
