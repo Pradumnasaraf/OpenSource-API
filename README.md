@@ -29,11 +29,7 @@
 
 ## 👨‍💻 Developing the API
 
-This section includes how to test and develop API at your end. You can either run it in the cloud using **Gitpod** or run it inside a container using **docker** or choose to set up the complete environment locally.
-
-**GitPod**
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Pradumnasaraf/OpenSource-API)
+This section includes how to test and develop the API at your end. You can run it inside a container using **docker** or set up the complete environment locally.
 
 **Docker Compose**
 
